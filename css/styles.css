@@ -99,7 +99,7 @@ p{
 }
 
 .skills_b{
-  flex: block;
+  flex: auto;
   width: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -141,7 +141,7 @@ a:active {
   h1 {font-size: 22px;}
 }
 
-@supports (display: grid);
+
 .grid {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -213,8 +213,12 @@ animation: 10s bali_b infinite alternate linear;
 }
 
 @keyframes bali_e {
-  from {transform: translate(0; 50px);}
-  to {transform: translate(200px, 50px);}
+  from {
+  transform: translate(100px, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .button, button {
@@ -223,7 +227,7 @@ animation: 10s bali_b infinite alternate linear;
   display: inline-block;
   font-family: inherit;
   /* takes the font from the outer container */
-  font-style: bold;
+  font-style: italic;
   background-color: var(--primary-color);
   color: #7b4e35;
   text-decoration: none;
