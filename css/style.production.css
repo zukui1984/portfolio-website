@@ -20,14 +20,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 5px 20px;
+  background: white;
+  box-shadow: 1px 1px 2px 0px black;
+  position: fixed;
+  top: 0;
 }
 
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 0;
+  flex: 0 1 0;
+  border-radius: 30px;
 }
 
 .page-header__item:last-child {
@@ -51,7 +56,7 @@ body {
   width: 80%;
   min-width: 360px;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 200px auto;
 }
 
 .profile__portrait {
@@ -82,9 +87,9 @@ h3 {
   font-weight: 700;
 }
 
-p{
+/* p{
   text-align: center;
-}
+} */
 
 
 .information_a {
@@ -254,7 +259,7 @@ svg .bali_e {
 }
 
 @-webkit-keyframes bali_e {
-  from {-webkit-transform: translate(0; 50px);transform: translate(0; 50px);}
+  from {-webkit-transform: translate(0, 50px); transform: translate(0 ,50px);}
   to {-webkit-transform: translate(200px, 50px);transform: translate(200px, 50px);}
 }
 
