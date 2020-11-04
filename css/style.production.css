@@ -126,9 +126,10 @@ p{
 }
 
 a {
-  color: #6495ED;
+  color: rgb(34, 84, 177);
+  text-decoration: none;
 }
-
+/* 
 a:hover, a:focus {
   text-decoration: none;
 }
@@ -139,7 +140,7 @@ a:visited {
 
 a:active {
   color: #90EE90;
-}
+} */
 
 @media all and  (min-width: 500px) and (max-width: 750px) {
 .grid {
@@ -168,6 +169,7 @@ a:active {
   width: auto;
   min-height: auto;
   margin: 0;
+  padding: 10px;
   }
 
 .grid__item:last-child {
@@ -272,69 +274,6 @@ svg .bali_e {
   to {-webkit-transform: translate(200px, 50px);transform: translate(200px, 50px);}
 }
 
-.button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  /* takes the font from the outer container */
-  font-style: italic;
-  background-color: #6495ED;
-  color: #7b4e35;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  -o-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-}
-
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  /* takes the font from the outer container */
-  font-style: italic;
-  background-color: #6495ED;
-  color: #7b4e35;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  -o-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-}
-
-.container {
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  padding: 10px;
-  border-color: #4CAF50;
-  color: #7FFF00;
-}
-
-.container:hover {
-  border-color: #008000;
-  color: #8A2BE2;
-}
-
-button:hover, button:focus,
-.button:hover, .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-
-.button_secondary {
-  background-color: #53357b;
-  color: #696969;
-}
-
-
 .page-footer {
    bottom: 0;
    position: absolute;
@@ -362,6 +301,19 @@ input[type=submit] {
   cursor: pointer;
 }
 
+button {
+  background-color: rgb(1, 1, 14);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+}
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
@@ -372,4 +324,11 @@ input[type=submit]:hover {
   padding: 20px;
   width: 700px;
   margin: auto;
+}
+
+.nav-active-item {
+  color: white;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 4px;
 }
