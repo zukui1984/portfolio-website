@@ -20,14 +20,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 5px 20px;
+  background: white;
+  box-shadow: 1px 1px 2px 0px black;
+  position: fixed;
+  top: 0;
 }
 
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 0;
+  flex: 0 1 0;
+  border-radius: 30px;
 }
 
 .page-header__item:last-child {
@@ -51,7 +56,7 @@ body {
   width: 80%;
   min-width: 360px;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 200px auto;
 }
 
 .profile__portrait {
@@ -70,6 +75,7 @@ h1{
   font-size: 30px;
   text-align: center;
   font-weight: 700;
+  margin-top: 100px;
 }
 
 h2 {
@@ -89,6 +95,8 @@ p{
 
 .information_a {
   color:black;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .standard-label {
@@ -103,6 +111,7 @@ p{
 .skills_b{
   -webkit-box-flex: block;
       -ms-flex: block;
+      flex: block;
   width: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -117,9 +126,10 @@ p{
 }
 
 a {
-  color: #6495ED;
+  color: lightblue;
+  text-decoration: none;
 }
-
+/* 
 a:hover, a:focus {
   text-decoration: none;
 }
@@ -130,7 +140,7 @@ a:visited {
 
 a:active {
   color: #90EE90;
-}
+} */
 
 @media all and  (min-width: 500px) and (max-width: 750px) {
 .grid {
@@ -159,6 +169,7 @@ a:active {
   width: auto;
   min-height: auto;
   margin: 0;
+  padding: 10px;
   }
 
 .grid__item:last-child {
@@ -254,7 +265,7 @@ svg .bali_e {
 }
 
 @-webkit-keyframes bali_e {
-  from {-webkit-transform: translate(0; 50px);transform: translate(0; 50px);}
+  from {-webkit-transform: translate(0, 50px); transform: translate(0 ,50px);}
   to {-webkit-transform: translate(200px, 50px);transform: translate(200px, 50px);}
 }
 
@@ -263,73 +274,65 @@ svg .bali_e {
   to {-webkit-transform: translate(200px, 50px);transform: translate(200px, 50px);}
 }
 
-.button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  /* takes the font from the outer container */
-  font-style: italic;
-  background-color: #6495ED;
-  color: #7b4e35;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  -o-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-}
-
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  /* takes the font from the outer container */
-  font-style: italic;
-  background-color: #6495ED;
-  color: #7b4e35;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  -o-transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-}
-
-.container {
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  padding: 10px;
-  text-align: center;
-  border-color: #4CAF50;
-  color: #7FFF00;
-}
-
-.container:hover {
-  border-color: #008000;
-  color: #8A2BE2;
-}
-
-button:hover, button:focus,
-.button:hover, .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-
-.button_secondary {
-  background-color: #53357b;
-  color: #696969;
-}
-
-
 .page-footer {
    bottom: 0;
    position: absolute;
    width: 100%;
    text-align: center;
+}
+
+input[type=tel], [type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #add8e6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  background-color: rgb(1, 1, 14);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 700px;
+  margin: auto;
+}
+
+.nav-active-item {
+  color: white;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contact {
+  color: blue;
 }
